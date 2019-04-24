@@ -224,13 +224,13 @@ function showHW(dt){
 				var data=JSON.parse(req.responseText);
 	
 				for (var i = 0; i < data.length; i++) {		
-					hw.innerHTML += "<div  style='height: 60px;font-family:Comic Sans MS;text-transform:capitalize;'><p style='margin-left:10px'><small style='color:orange;'>" + data[i]['hwdate'] + "</small><br>" + "<b> "+data[i]['subject']+" </b> : "  + data[i]['descr'] ;
+					hw.innerHTML += "<div  style='height: 65px;font-family:Comic Sans MS;text-transform:capitalize;'><p style='margin-left:10px'><small style='color:orange;'>" + data[i]['hwdate'] + "</small><br>" + "<b> "+data[i]['subject']+" </b> : "  + data[i]['descr'] ;
 		
 					if(data[i]['imgs'].length>0){
 						var imgs = data[i]['imgs'].split(',');
 						var im = "";
 						for (var x=0; x< imgs.length; x++){
-							im +="<br><img src='"+imgs[x]+"' class='img-thumbnail'  alt='HW Image'  />";
+							im +="<br><img src='"+imgs[x]+"' class='img-thumbnail' style='max-height: 350px;margin-left:15px;'  alt='HW Image'  /><br>";
 						}
 						hw.innerHTML += im;
 					}

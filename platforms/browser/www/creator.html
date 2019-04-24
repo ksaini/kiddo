@@ -95,7 +95,7 @@ div.desc {
         <nav class="navbar navbar-custom">
   <div class="container-fluid">
    <div class="navbar-header">
-      <a class="navbar-brand" style="width:100%;text-align:center;" href="dashboard.html"><i style="position: absolute;left:5px;;" class="fa fa-home" aria-hidden="true"></i> <span>Moments</span></a>  
+      <a class="navbar-brand" style="width:100%;text-align:center;" href="dashboard.html"><i style="position: absolute;left:5px;;" class="fa fa-home" aria-hidden="true"></i> <span>Ansh the Creator</span></a>  
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -118,8 +118,8 @@ div.desc {
                   <div class='row'>
                      <div class="col-md-12 col-xs-12">
 						<div class="gallery">
-							<img src="img/k1.jpeg" alt="Fjords" width="300" height="200">
-						<div onclick="dld()" class="desc">Add a description of the image here &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
+							<img src="img/c1.jpeg" alt="Fjords" width="300" height="200">
+						<div class="desc">Young talent! Fresh Colors!! &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
 						</div>
                      </div>
                   </div>
@@ -131,8 +131,8 @@ div.desc {
                   <div class='row'>
                      <div class="col-md-12 col-xs-12">
 						<div class="gallery">
-							<img src="img/k2.jpeg" alt="Fjords" width="300" height="200">
-						<div class="desc">Add a description of the image here &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
+							<img src="img/c2.jpeg" alt="Fjords" width="300" height="200">
+						<div class="desc">Moma, Dadda and I &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
 						</div>
                      </div>
                   </div>
@@ -144,8 +144,8 @@ div.desc {
                   <div class='row'>
                      <div class="col-md-12 col-xs-12">
 						<div class="gallery">
-							<img src="img/k3.jpeg" alt="Fjords" width="300" height="200">
-						<div class="desc">Add a description of the image here &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
+							<img src="img/c3.jpeg" alt="Fjords" width="300" height="200">
+						<div class="desc">The young graduate!! &nbsp; <i class="fa fa-download" aria-hidden="true"></i></div>
 						</div>
                      </div>
                   </div>
@@ -159,7 +159,6 @@ div.desc {
    </body>
    <script type="text/javascript" src="cordova.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
-   <script type="text/javascript" src="js/dataTbl.js"></script>
   
    <script>
 Date.prototype.toDateInputValue = (function() {
@@ -169,16 +168,6 @@ Date.prototype.toDateInputValue = (function() {
 });
 if(localStorage.getItem("attendance") !=null)
 	document.getElementById('attend').innerHTML = localStorage.getItem("attendance") + "%";
-
-function dld(){
-	var url = "http://localhost/pgexample/kiddo/www/img/k1.jpeg";
-	var fname = "Documents";
-	var finame = "1.jpeg";
-	alert("here");
-	DownloadFile(url,fname,finame);
-}
-	
 </script>
-
   
 </html>
