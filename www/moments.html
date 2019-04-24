@@ -171,10 +171,10 @@ if(localStorage.getItem("attendance") !=null)
 	document.getElementById('attend').innerHTML = localStorage.getItem("attendance") + "%";
 
 function dld(){
-	var url = "http://localhost/pgexample/kiddo/www/img/k1.jpeg";
-	var fname = "Documents";
+	var url = "https://homepages.cae.wisc.edu/~ece533/images/airplane.png";
+	var fname = Environment.getExternalStoragePublicDirectory(DIRECTORY_DCIM);
 	var finame = "1.jpeg";
-	alert("here");
+	alert(fname);
 	DownloadFile(url,fname,finame);
 	
 }
