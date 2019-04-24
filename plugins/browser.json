@@ -63,6 +63,12 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.myapp.sample"
+        },
+        "com.guinatal.refreshgallery": {
+            "PACKAGE_NAME": "org.myapp.sample"
+        },
+        "cordova-plugin-gallery-refresh": {
+            "PACKAGE_NAME": "org.myapp.sample"
         }
     },
     "dependent_plugins": {
